@@ -8,6 +8,18 @@
     - とりあえず元データだけでも共有する
       - https://github.com/lisp-cookbook-ja/wiliki-data
   - gdbmのデータを読み出さないといけない
-    - gaucheでやってみる
     - clispでやってみる
+      - https://clisp.sourceforge.io/beta/impnotes/gdbm.html
+      - 謎のエラー
+    - gaucheでやってみる
+      - https://practical-scheme.net/gauche/man/gauche-refe/Generic-DBM-interface.html
+      - *** ERROR: couldn't open gdbm file "/l/shibuya.lisp/wiliki-data/WiLiKi/wiliki-cl-tips.dbm" (gdbm_errno=10)
+      - DBファイルが破損した?
+        - gdbm_errno=10 とは (gdbm.h)
+          - GDBM_CANT_BE_WRITER                 = 10
+        - :rw-mode :readにした
+          - gdbm_errno=9
+          - GDBM_CANT_BE_READER                 = 9
+      - 2013年のバックアップは読めることを確認。文字コードの問題か?
     - その他
+- githubページでメインサイト作成
