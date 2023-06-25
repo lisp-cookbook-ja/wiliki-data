@@ -1,0 +1,181 @@
+/* sample style sheet for wiliki */
+
+body {
+  /* font-family: verdana, arial, helvetica, sans-serif; */
+  color: black;
+  background-color: #eeeedd;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+img { vertical-align: bottom }
+input { vertical-align: bottom }
+
+h1#title {
+    margin-top:2px;
+    margin-bottom:2px;
+    color: #888866;
+}
+
+h1#title a {
+    color: #888866;
+    text-decoration: none;
+}
+
+div#footer {
+    color: #666644;
+    text-align: right;
+    font-size: 10pt;
+}
+div#footer a {
+    color: #666644;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   text-align: left;
+   background: transparent;
+}
+h1 { font-size: 190%; color: #888866 }
+h2 { font-size: 160%; color: #006644 }
+h3 { font-size: 130%; color: #666644 }
+h4 { font-size: 110%; color: #004422 }
+h5 { font-size: 100%; color: #444422 }
+h6 { font-size: 100%; color: #006655; font-style: italic }
+
+hr {
+    width: 100%;
+    height: 4px;
+    padding: 0;
+    color: #ccccaa;
+    background-color: #ccccaa;
+    border: 1px solid #aaaa88;
+}
+
+pre {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 4px;
+    font-family: monospace;
+    color: #224444;
+    background-color: #ddeeee;
+    border: solid thin #aacccc;
+}
+
+pre.macroerror { 
+    background-color: #ee5555;
+}
+
+blockquote {
+    border-left: solid thick #ddbbaa;
+}
+
+blockquote > blockquote {
+    border-left: solid thick #bb9988;
+}
+
+blockquote > blockquote > blockquote {
+    border-left: solid thick #997766;
+}
+
+dt { font-weight: bold }
+
+td.inbody { background: #dddddd }   /* used in formatted body */
+td.preview { background: #eeddaa }  /* used in preview page */
+
+input.navi-button {
+  margin: 0pt;
+  padding: 0pt;
+  background-color: #dddddd;
+  border: solid 1pt #777777;
+}
+
+input.search-box {
+  margin: 0pt;
+  padding: 0pt;
+  border: solid 1pt #777777;
+}
+
+input.navi-button:hover {
+  background: #ffffee;
+}
+
+span.breadcrumb-links {
+  color: #444444;
+  font-size: 90%;
+}
+
+span.wiliki-alert { background-color: #ff8080; } /* used to warn internal error */
+
+/*
+ * Comment
+ */
+
+div.comment { 
+  font-size: 90%;
+  padding: 0pt 3em 2em 3em;
+  margin: 0pt;
+}
+
+div.comment .comment-input {
+  margin-left: 20pt;
+}
+
+div.comment .comment-area {
+  width:  60ex;
+  height: 10ex;
+}
+
+div.comment > p.comment-caption {
+  border-left: solid 4px #006655;
+  border-bottom: solid 1px #006655;
+  padding: 0px 3px; margin: 8px 0px;
+}
+
+div.comment > div.comment-past > h2 {
+  font-size: 100%; font-weight: normal;
+  padding: 0pt; margin: 0pt;
+}
+
+div.comment > div.comment-past h2 {
+  font-size: 100%; font-weight: normal;
+  padding: 0pt; margin: 0pt;
+}
+
+div.comment > div.comment-past h3 {
+  font-size: 100%; font-weight: normal;
+  padding: 0pt; margin: 0pt;
+}
+
+div.comment > div.comment-past h4 {
+  font-size: 100%; font-weight: normal;
+  padding: 0pt; margin: 0pt;
+}
+
+div.comment > div.comment-past h5 {
+  font-size: 100%; font-weight: normal;
+  padding: 0pt; margin: 0pt;
+}
+
+div.comment > div.comment-past h6 {
+  font-size: 100%; font-weight: normal;
+  padding: 0pt; margin: 0pt;
+}
+
+div.comment > div.comment-past > blockquote {
+  border: none;
+  padding: 0pt 20pt;
+  margin: 0pt 0pt 5pt 0pt;
+}
+
+div.comment > div.comment-past > blockquote * {
+  padding: 0pt; margin-top: 0pt; margin-bottom: 0pt;
+}
+
+span.tag-anchor {
+  background-color: #ffdddd;
+  font-size: 90%;
+  font-style: italic;
+}

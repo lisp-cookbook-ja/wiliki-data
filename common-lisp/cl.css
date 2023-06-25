@@ -1,0 +1,593 @@
+/**********************
+ * Colour Scheme
+ **********************
+ * Blues
+ *---------------------
+ * Darkest: #707B8D
+ * Dark:    #929DAF
+ * Medium:  #BCCFEF
+ * Light:   #DBE8FF
+ * Desaturated: #E4EEFF
+ *
+ **********************
+ * Reds
+ *---------------------
+ * Hard Red:    #D30707
+ * Hard Orange: #FF9F17
+ * Deep Read:   #760404
+ * Deep Orange: #8F590D
+ * New Red:     #9C0505
+ * New Orange:  #D08213
+ **********************/
+body
+{
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: sans-serif;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header
+ * Contains:
+ * Title and Navbar
+ */
+
+#nav
+{
+  background-color: #BCCFEF;
+  border: 1px solid #929DAF;
+  padding: 0.25em;
+  text-align: right;
+  line-height: 3ex;
+  font-size: small;
+}
+#nav a:link,
+#nav a:active,
+#nav a:visited,
+#nav a:hover
+{
+  color: #000;
+  text-decoration: none;
+  padding-left: 1em;
+}
+
+#nav input
+{
+  border: 1px solid #000;
+  margin: 0.25ex;
+  padding: 0ex;
+  background-color: #DBE8FF;
+}
+
+h1#title
+{
+  min-height: 60px;
+  /* background-image: url(/images/left-paren.png); */
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px solid;
+  vertical-align: middle;
+  padding: 0px;
+  padding-left: 110px;  /* 117px image */
+  margin: 1ex;
+  font-size: 220%;
+}
+
+h1#title div
+{
+  min-height: 60px;
+  padding: 0px;
+  margin: 0px;
+  padding-right: 90px; /* 92px image */
+  background-image: url(/images/right-paren.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+h1#title a:link,
+h1#title a:visited,
+h1#title a:active,
+h1#title a:hover
+{
+  color: #000000;
+  text-decoration: none;
+}
+
+h1#title a:hover
+{
+  color: #760404;
+}
+
+/****************
+ * Content Area *
+ ****************/
+
+/* Headings */
+
+h2, h3, h4, h5, h6
+{
+  padding: 0.5ex;
+  border: 0px dotted #707B8D;
+  border-bottom-width: 1px;
+/*  background-color: #DBE8FF; */
+  background-color: #DBDBDB;
+  letter-spacing: 0.5ex;
+  word-spacing: 0.7ex;
+}
+
+h2
+{
+  font-size: 140%;
+}
+
+h3
+{
+  font-size: 125%;
+}
+
+h4
+{
+  font-size: 115%;
+}
+
+h5
+{
+  font-size: 110%;
+  letter-spacing: 0.25ex;
+  word-spacing: 0.3ex;
+  font-weight: normal;
+}
+
+h6
+{
+  font-size: 100%;
+  letter-spacing: 0.1ex;
+  word-spacing: 0.2ex;
+  font-weight: normal;
+}
+
+p
+{
+  margin-left: 0.5em;
+}
+
+/* blockquotes */
+blockquote
+{
+  border: 0px dotted #707B8D;
+  border-left-width: 1px;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 1ex;
+  padding-left: 1em;
+  padding-bottom: 0.2ex;
+  background-color: #F4F8FC;
+}
+
+blockquote p
+{
+  margin-top: 0em;
+}
+
+/* Preformatted Text
+ * Applies to Scheme code too! 
+ */
+
+pre
+{
+  border: 1px solid #707B8D;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1ex;
+/*  background-color: #F8FCFF; */
+  background-color: #F8F8F8;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  /* No pre-wrap in KHTML.  Sux */
+}
+
+/* Lists */
+
+ol, ul
+{
+  margin-left: 1em;
+  padding-left: 2em;
+}
+
+ol ol, ul ul
+{
+  margin-left: 0.25em;
+}
+
+ol
+{
+  list-style-type: decimal;
+}
+
+ol ol
+{
+  list-style-type: upper-alpha;
+}
+
+ol ol ol
+{
+  list-style-type: upper-roman;
+}
+
+ol ol ol ol
+{
+  list-style-type: lower-alpha;
+}
+
+ol ol ol ol ol
+{
+  list-style-type: lower-roman;
+}
+
+ol ol ol ol ol ol
+{
+  list-style-type: lower-greek;
+}
+
+ol ol ol ol ol ol ol
+{
+  list-style-type: hebrew;
+}
+
+dt
+{
+  width: 50%;
+  font-weight: bold;
+  border-bottom: 1px dotted #888;
+  margin-left: 2em;
+  padding: 0.3ex;
+  background-color: #F8FCFF;
+}
+
+dd
+{
+  margin-left: 3em;
+  padding-top: 0.25ex;
+  padding-bottom: 1em;
+}
+
+dd p
+{
+  margin: 0px;
+}
+
+/* Hyperlinks */
+a:link,
+a:active,
+a:hover,
+a:visited
+{
+  font-weight: bold;
+  color: #9C0505;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: #D08213;
+}
+
+/* Table */
+
+table.inbody
+{
+  border: 1px solid #707B8D;   
+  border-spacing: 2px;
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: #BCCFEF;
+}
+
+table.inbody td.inbody
+{
+  border: 1px solid #707B8D;
+  padding: 0.3ex;
+  background-color: #fff;
+}
+
+/******************
+ * Recent Changes *
+ ******************/
+
+ /* Darkest: #707B8D
+ * Dark:    #929DAF
+ * Medium:  #BCCFEF
+ * Light:   #DBE8FF
+*/
+/* Recent Changes */
+
+table.recent-changes
+{
+    border-spacing: 0px;
+}
+
+table.recent-changes td
+{
+    padding: 1ex;
+}
+
+td.pagename
+{
+    vertical-align: middle;
+}
+
+td.date
+{
+    border-top: 2ex solid #fff;
+    background-color: #BCCFEF;
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+}
+
+td.time
+{
+    font-size: small;
+}
+
+td.elapsed
+{
+    font-size: x-small;
+    white-space: nowrap
+}
+
+tr.even
+{
+    background-color: #E4EEFF;
+}
+
+/******************
+ * Error Messages *
+ ******************/
+
+.permission-denied, .missing-logentry {
+    color: red;
+}
+
+/*****************
+ * User Comments *
+ *****************/
+div.comment
+{
+  position: relative;
+  border: 1px #707B8D solid;
+  border-left-width: 2px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  background-color: #DBE8FF;
+  overflow: hidden; 
+}
+
+div.portrait
+{
+  min-width: 80px;
+  min-height: 4ex;
+  float: left;
+  border: 1px solid #707B8D;
+  border-left-width: 2px;
+  margin: 0.2em 0.5em 0.2em 0.2em;
+  padding: 0.5ex;
+  background-color: #BCCFEF;
+  text-align: center;
+}
+
+div.comment-text
+{
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+div.comment-text p {
+  padding-top: 0;
+  margin-top: 0.5ex;
+}
+
+* html div.comment div.portrait img
+{
+  height: 48px;
+  width: 48px;
+}
+
+div.comment div.portrait img
+{
+  max-width: 48px;
+  max-height: 48px;
+}
+
+div.comment div.portrait p
+{
+  font-size: x-small;
+}
+
+div.comment div.portrait p a
+{
+  color: #303749;
+}
+
+/**************************
+ * Scheme Code Formatting *
+ **************************/
+
+/* Scheme documentation links */
+
+a.scheme-documentation {
+   color: inherit;
+   text-decoration: inherit;
+}
+
+/* Highlighting for scheme syntax tokens. Colors are from the emacs
+   scheme mode for color displays on a light background. */
+
+SPAN.comment { color: #B22222; font-weight: bold }
+SPAN.string { color: #BC8F8F; font-weight: bold }
+SPAN.keyword { color: #A020F0; font-weight: bold }
+SPAN.function-name { color: #0000FF; font-weight: bold }
+SPAN.variable-name { color: #B8860B; font-weight: bold }
+SPAN.type { color: #228B22; font-weight: bold }
+SPAN.builtin { color: #DA70D6; font-weight: bold }
+
+/* The paren stuff */
+
+/* Top level */
+PRE.scheme > SPAN.paren:hover { background-color: #FFCFCF }
+
+/* Paren level 1 */
+PRE.scheme > SPAN.paren
+> SPAN.paren:hover { background-color: #CFFFCF }
+
+/* Paren level 2 */
+PRE.scheme > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #CFCFFF }
+
+/* Paren level 3 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #CFFFFF }
+
+/* Paren level 4 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #FFCFFF }
+
+/* Paren level 5 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #FFFFCF }
+
+/* Paren level 6 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren
+> SPAN.paren:hover { background-color: #B4E1EA }
+
+/* Paren level 7 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #BDEAB4 }
+
+/* Paren level 8 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #EAD4B4 }
+
+/* Paren level 9 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #F4D0EC }
+
+/* Paren level 10 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #D0D9F4 }
+
+/* Paren level 11 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren
+> SPAN.paren:hover { background-color: #FFCFCF }
+
+/* Paren level 12 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #CFFFCF }
+
+/* Paren level 13 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #CFCFFF }
+
+/* Paren level 14 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #CFFFFF }
+
+/* Paren level 15 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #FFCFFF }
+
+/* Paren level 16 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren
+> SPAN.paren:hover { background-color: #FFFFCF }
+
+/* Paren level 17 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #BDEAB4 }
+
+/* Paren level 18 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #EAD4B4 }
+
+/* Paren level 19 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #F4D0EC }
+
+/* Paren level 20 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #D0D9F4 }
+
+/* Paren level 21 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren
+> SPAN.paren:hover { background-color: #FFCFCF }
+
+/* Paren level 22 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #CFFFCF }
+
+/* Paren level 23 */
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:hover { background-color: #CFFFCF }
+
+PRE.scheme > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren > SPAN.paren
+           > SPAN.paren > SPAN.paren > SPAN.paren
+> SPAN.paren:before { content: "{{23 levels of indentation?! Yiakes!}}" }
+
+/* extend here if more nestings are needed */
+
+/* Currently used colors:
+   #FFCFCF #CFFFCF #CFCFFF
+   #CFFFFF #FFCFFF #FFFFCF
+   #B4E1EA #BDEAB4 #EAD4B4
+   #F4D0EC #D0D9F4 #FFFFCF
+*/
