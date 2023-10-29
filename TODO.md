@@ -2,17 +2,17 @@
 
 - wilikiのデータを移行
   - 移行先
-    - https://github.com/lisp-cookbook-ja
+    - [https://github.com/lisp-cookbook-ja](https://github.com/lisp-cookbook-ja)
     - wikibooksもいいのではないか
   - wilikiのデータを移行
     - とりあえず元データだけでも共有する
-      - https://github.com/lisp-cookbook-ja/wiliki-data
+      - [https://github.com/lisp-cookbook-ja/wiliki-data](https://github.com/lisp-cookbook-ja/wiliki-data)
   - gdbmのデータを読み出さないといけない
     - clispでやってみる
-      - https://clisp.sourceforge.io/beta/impnotes/gdbm.html
+      - [https://clisp.sourceforge.io/beta/impnotes/gdbm.html](https://clisp.sourceforge.io/beta/impnotes/gdbm.html)
       - 謎のエラー
     - gaucheでやってみる
-      - https://practical-scheme.net/gauche/man/gauche-refe/Generic-DBM-interface.html
+      - [https://practical-scheme.net/gauche/man/gauche-refe/Generic-DBM-interface.html](https://practical-scheme.net/gauche/man/gauche-refe/Generic-DBM-interface.html)
       - *** ERROR: couldn't open gdbm file "/l/shibuya.lisp/wiliki-data/WiLiKi/wiliki-cl-tips.dbm" (gdbm_errno=10)
       - DBファイルが破損した?
         - gdbm_errno=10 とは (gdbm.h)
@@ -20,6 +20,10 @@
         - :rw-mode :readにした
           - gdbm_errno=9
           - GDBM_CANT_BE_READER                 = 9
-      - 2013年のバックアップは読めることを確認。文字コードの問題か?
+      - 2013年のバックアップは読めることを確認。
     - その他
+  - ローカルのファイルシステムが壊れていたらしい(md5のサムは同じなのに……)
+    - ファイルをアップした
+      - [https://github.com/lisp-cookbook-ja/wiliki-data/blob/main/WiLiKi/cl-tips.scm](https://github.com/lisp-cookbook-ja/wiliki-data/blob/main/WiLiKi/cl-tips.scm)
+- Schemeのリストをmarkdownに変換する
 - githubページでメインサイト作成
